@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 盒子模型</title>
+  <style>
+    .box {
+      width: 600px
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      float: left;
+      box-sizing: border-box;
+      /* -webkit-box-sizing: content-box; */
+      /* 设置盒子的边框 */
+      border: 1px solid #000
+      /* 设置左侧外边距 */
+      /* margin-left: 1px; */
+      /* 设置盒子的内边距 */
+      /* padding: 10px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="images/goods/登山鞋.jpg" alt="">
+    <img src="images/goods/女包.jpg" alt="">
+    <img src="images/goods/男包.jpg" alt="">
+    <img src="images/goods/棉服.jpg" alt="">
+  </div>
+</body>
+
+</html>

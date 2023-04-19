@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>选择器的使用</title>
+</head>
+<style type="text/css">
+    /* 设置导航栏样式 */
+    nav {
+        width: 300px
+    }
+
+    /* 设置导航栏中的每一项的样式 */
+    li {
+        background-color: rgba(0, 0, 0,
+                0.4);
+        height: 35px;
+        line-height: 35px;
+        overflow: hidden
+    }
+
+    /* 设置偶数行背景颜色透明度为0.9 */
+    li:nth-of-type(2n) {
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    /* 鼠标悬停时背景颜色为#0099E5 */
+    li:hover {
+        background: #0099E5
+    }
+
+    /* 设置超链接的样式 */
+    a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        height: 35px;
+        padding: 0 38px
+    }
+</style>
+
+<body>
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#">JavaEE教程</a>
+            </li>
+
+            <li>
+                <a href="#">Android教程</a>
+            </li>
+
+            <li>
+                <a href="#">PHP教程</a>
+            </li>
+
+            <li>
+                <a href="#">UI设计教程</a>
+            </li>
+
+            <li>
+                <a href="#">iOS教程</a>
+            </li>
+
+            <li>
+                <a href="#">Web前端教程</a>
+            </li>
+
+            <li>
+                <a href="#">C/C++教程</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

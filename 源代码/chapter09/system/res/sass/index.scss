@@ -1,0 +1,77 @@
+body {
+  font-size: .875rem;
+}
+
+.navbar {
+
+  // 网站名称
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  }
+
+  /* 给折叠按钮定位 */
+  .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+
+  // 搜索表单
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+  }
+}
+
+/* 中间部分内容-左侧侧边栏 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+
+  .nav-link {
+    font-weight: 500;
+    color: #333;
+
+    .feather {
+      margin-right: 6px;
+      color: #999;
+      width: 16px;
+      height: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .nav-link.active {
+    color: #007bff;
+  }
+
+}
+
+/* 图标选中 */
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 4rem;
+  }
+}

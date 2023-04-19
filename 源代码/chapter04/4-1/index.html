@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>调查问卷</title>
+  <link rel="stylesheet" href="css/user.css" media="screen" type="text/css" />
+</head>
+
+<body>
+  <form action="#">
+    <ul>
+      <li>
+        <!-- text单行文本输入框 -->
+        <label>姓名：</label>
+        <input class="right" type="text" value="张三" maxlength="6">
+      </li>
+      <li>
+        <!-- 日期输入框 -->
+        <label>出生日期：</label>
+        <input class="right" type="date">
+      </li>
+      <li>
+        <!-- 单选框 -->
+        <label>性别：</label>
+        <div class="right">
+          <input type="radio" &nbsp;name="male">
+          <label&nbsp;for="male">男
+            <input type="radio" &nbsp;name="female">
+            <label&nbsp;for="female">女
+            </label&nbsp;for="female">
+          </label&nbsp;for="male">
+        </div>&nbsp;&nbsp;&nbsp;
+      </li>
+
+      <li>
+        <!--number数值输入域-->
+        <label for="">体重：</label>
+        <div class="right">
+          <input type="number" min="10" max="100">kg
+        </div>
+      </li>
+      <li>
+        <!--checkbox复选框-->
+        <label for="">兴趣：</label>
+        <div class="right">
+          <input type="checkbox">唱歌
+          <input type="checkbox">跳舞
+          <input type="checkbox">游泳
+        </div>
+      </li>
+      <li> <label for="">喜欢的颜色：</label>
+        <input class="right" type="color" value="#ff0000">
+      </li>
+      
+
+      <li>
+        <!-- 文件域 -->
+        <label>上传头像：</label>
+        <input class="right" type="file">
+      </li>
+      <li class="advise">
+        <!-- 您的建议 -->
+        <label>您的建议：</label>
+        <textarea name="opinion" cols="30" rows="10"></textarea>
+      </li>
+
+
+      <li class="footer">
+        <!-- submit提交按钮 -->
+        <input type="submit">
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>

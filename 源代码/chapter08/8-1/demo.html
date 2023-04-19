@@ -1,0 +1,117 @@
+<!-- 方式2	将SVG图标外链到项目中 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>登录页面</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login {
+      width: 600px;
+      height: auto;
+      border: 1px solid #f1f1f1;
+      box-shadow: 2px 2px 8px #000;
+
+    }
+
+    .head {
+      width: 100%;
+      height: 160px;
+      background-image: -webkit-linear-gradient(30deg, #2196F3 0, #00BCD4 300px, #009688 300px, #CDDC39 600px);
+    }
+
+    .center {
+      width: 400px;
+      height: 200px;
+    }
+
+    .footer>* {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .footer>*:hover {
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="login">
+      <!-- 头部head部分 -->
+      <div class="head mb-5"></div>
+      <!-- 中间center部分 -->
+      <!-- 中间center部分 -->
+      <div class="center m-auto">
+        <form>
+          <div class="form-group">
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="icons/people.svg" alt="">
+                </div>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="手机号">
+            </div>
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="icons/shield-lock.svg" alt="">
+                </div>
+              </div>
+              <input type="text" class="form-control" id="password" placeholder="密码">
+            </div>
+          </div>
+          <div class="row  text-center">
+            <div class="col-4">
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input class="custom-control-input" type="checkbox" id="login">
+                <label class="custom-control-label" for="login">自动登录</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input class="custom-control-input" type="checkbox" id="pwd" checked>
+                <label class="custom-control-label" for="pwd">记住密码</label>
+              </div>
+            </div>
+            <div class="col-4">
+              找回密码
+            </div>
+          </div>
+          <button type="submit" class="btn-lg btn-primary btn-block mt-4">安全登录</button>
+        </form>
+      </div>
+
+      <!-- 底部footer部分 -->
+      <div class="footer d-flex justify-content-between">
+        <div class="left">
+          注册账号？
+        </div>
+        <div class="right">
+          扫码登录
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

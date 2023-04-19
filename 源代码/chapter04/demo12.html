@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML5表单验证</title>
+</head>
+
+<body>
+  <form action="#" method="get">
+    <!-- 验证用户名 -->
+    <input name="user_name" required placeholder="请输入您的用户名" pattern="^[a-zA-Z0-9_-]{6,16}$" /><br><br>
+    <!-- 验证11位手机号码 -->
+    <input name="user_phone" required placeholder="请输入您的手机号码" pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$" /><br><br>
+    <!-- 验证6位数邮编 -->
+    <input type="text" pattern="[1-9]\d{5}(?!\d)" name="postcode" required placeholder="请输入中国邮编" /><br><br>
+    <input type="submit" />
+  </form>
+</body>
+
+</html>

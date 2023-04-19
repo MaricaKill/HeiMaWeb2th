@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>绘制笑脸</title>
+</head>
+
+<body>
+  <canvas id="cavsElem" width='400' height="300">
+    你的浏览器不支持Canvas，请升级浏览器
+  </canvas>
+  <script>
+    // 获取画布和上下文对象
+    var context = document.getElementById('cavsElem').getContext('2d');
+    context.beginPath();          // 开始路径
+    context.fillStyle = 'orange'; // 设置填充颜色
+    // 绘制外部圆形，true逆时针
+    context.arc(100, 100, 100, 0, 2 * Math.PI, true);
+    context.closePath();          // 关闭路径
+    context.stroke();             // 描边
+    context.fill();               // 填充
+
+    // 绘制左眼
+    context.beginPath();          // 开始路径
+    context.strokeStyle = "#fff"; // 设置描边颜色
+    context.lineWidth = 3;        // 设置线条的粗细
+    context.arc(70, 60, 20, 0, Math.PI, true);
+    context.stroke();             // 路径描边
+    context.closePath()
+    // 绘制右眼
+    context.beginPath();          // 开始路径
+    context.strokeStyle = "#fff"; // 设置描边颜色
+    context.lineWidth = 3;        // 设置线的粗细
+    context.arc(130, 60, 20, 0, Math.PI, true);
+    context.stroke();             // 路径描边
+    context.closePath()
+
+    // 绘制嘴巴下弧线
+    context.beginPath();
+    context.lineWidth = 2;
+    context.strokeStyle = "#fff";
+    context.arc(100, 110, 50, 0, 1 * Math.PI);
+    context.stroke();
+    // 绘制嘴巴上弧线
+    context.beginPath();
+    context.arc(100, 95, 50, 0.05 * Math.PI, 0.95 * Math.PI);
+    context.strokeStyle = '#fff';
+    context.stroke();
+  </script>
+</body>
+
+</html>

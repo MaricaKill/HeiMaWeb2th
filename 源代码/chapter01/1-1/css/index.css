@@ -1,0 +1,60 @@
+html,
+body,
+h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header,
+footer {
+  background: #eee;
+  padding: 10px;
+}
+
+header {
+  height: 25px;
+}
+
+footer {
+  height: 60px;
+  clear: both;
+}
+
+section {
+  /* 给left和right空出位置 */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 150px 0 150px;
+  overflow: hidden;
+}
+
+.left,
+.middle,
+.right {
+  height: 799px;
+  float: left;
+}
+
+.middle {
+  width: 100%;
+  background: #ccc;
+}
+
+.left {
+  /* 让left回到上一行最左侧 */
+  margin-left: -100%;
+  /* 让left回到最左侧 */
+  position: relative;
+  left: -150px;
+  width: 150px;
+  background: #eee;
+}
+
+.right {
+  margin-left: -150px;
+  position: relative;
+  right: -150px;
+  width: 150px;
+  background: #eee;
+}

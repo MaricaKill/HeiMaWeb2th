@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap标签页切换</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- 引入 Bootstrap核心CSS文件 -->
+  <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <!-- 原代码 -->
+    <li class=" nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">标题1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">标题2</a>
+    </li>
+  </ul>
+  <!-- 定义选项卡的展示内容 -->
+  <div class="tab-content">
+    <div class="tab-pane active container" id="home">我是首页</div>
+    <div class="tab-pane container" id="menu1">我是标题1内容</div>
+    <div class="tab-pane container" id="menu2">我是标题2内容</div>
+  </div>
+
+
+
+  <!-- jQuery (Bootstrap的JavaScript插件需要引入jQuery) -->
+  <script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>
+  <!-- 用于弹窗、提示、下拉菜单 -->
+  <script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
+  <!-- 包括所有已编译的插件 -->
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

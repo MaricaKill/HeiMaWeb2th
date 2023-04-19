@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 动画</title>
+    <style>
+        img {
+            width: 150px
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        img:hover {
+            animation: rotate 0.5s linear infinite
+        }
+    </style>
+</head>
+<body>
+  <img src="./images/fengche.png" alt="">
+</body>
+</html>

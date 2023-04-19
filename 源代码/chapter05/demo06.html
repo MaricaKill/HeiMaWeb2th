@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>绘制几何图形</title>
+</head>
+
+<body>
+	<canvas id="canvas" width="250px" height="150px" style="border: 1px black solid;"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");	// 获取画布
+		var context = canvas.getContext("2d");					// 准备画笔（获取上下文）
+		// 绘制第一个填充矩形
+		context.strokeRect(112.5, 0, 30, 30);	// 绘制矩形边框
+		context.fillRect(0, 0, 50, 50);				// 绘制填充矩形
+		// 绘制第二个填充矩形
+		context.strokeRect(25, 25, 50, 50);
+		context.fillRect(50, 50, 50, 50);
+		// 绘制第三个填充矩形
+		context.strokeRect(75, 75, 50, 50);
+		context.fillRect(100, 100, 50, 50);
+		// 清除第三个矩形内绘制的内容
+		context.clearRect(110, 110, 30, 30);
+		// 绘制第四个填充矩形
+		context.strokeRect(125, 75, 50, 50);
+		context.fillRect(150, 50, 50, 50);
+		// 绘制第五个填充矩形
+		context.strokeRect(175, 25, 50, 50);
+		context.fillRect(200, 0, 50, 50);
+	</script>
+</body>
+
+</html>

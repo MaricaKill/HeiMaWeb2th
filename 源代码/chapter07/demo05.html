@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>弹性盒布局</title>
+  <style>
+    body {
+      font: 24px Helvetica;
+      background: #fff;
+    }
+
+    .main {
+      min-height: 500px;
+      margin: 0px;
+      padding: 0px;
+      /* 设置该div为一个弹性盒容器 */
+      display: flex;
+      /* 子元素按横轴方向顺序排列 */
+      flex-flow: row;
+    }
+
+    .main>* {
+      margin: 4px;
+      padding: 5px;
+      /* pt也是文字大小的一种单位，1pt=px*3/4 */
+      border-radius: 7pt;
+    }
+
+    .main>article {
+      background: #719DCA;
+      /* 用数字也可以达到分配宽度的效果，将容器分为5份，占3份 */
+      flex: 3;
+      /* 排序为第2个子元素 */
+      order: 2;
+    }
+
+    .main>nav {
+      background: #FFBA41;
+      /* 将容器分为5份，占1份 */
+      flex: 1;
+      /* 排序为第1个子元素 */
+      order: 1;
+    }
+
+    .main>aside {
+      background: #FFBA41;
+      /* 将容器分为5份，占1份 */
+      flex: 1;
+      /* 排序为第3个子元素 */
+      order: 3;
+    }
+
+    header,
+    footer {
+      display: block;
+      margin: 4px;
+      padding: 5px;
+      min-height: 100px;
+      border: 2px solid #FFBA41;
+      border-radius: 7pt;
+      background: #FFF;
+    }
+
+    @media all and (max-width: 640px) {
+
+      /* 当屏幕小于640px时 */
+      .main {
+        /* 弹性盒中的子元素按纵轴方向排列 */
+        flex-flow: column;
+      }
+
+      .main>article,
+      .main>nav,
+      .main>aside {
+        /* 将子元素都设置成同一个值，表示按自然顺序排列 */
+        order: 0;
+      }
+
+      .main>nav,
+      .main>aside,
+      header,
+      footer {
+        min-height: 50px;
+        max-height: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <div class="main">
+    <article>article</article>
+    <nav>nav</nav>
+    <aside>aside</aside>
+  </div>
+  <footer>footer</footer>
+</body>
+
+</html>

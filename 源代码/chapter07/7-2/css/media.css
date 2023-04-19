@@ -1,0 +1,55 @@
+/* @media (max-width: 1200px) { */
+  /* 超小屏幕（小于576px） */
+   @media screen and (max-width: 575px) {
+    .inner {
+      width: 100%;
+    }
+    .inner_hd {
+      padding: 30px 0;
+    }
+    .item li {
+      width:50%;
+    }
+    .inner_hd h2 { 
+      font-size: 26px;
+    }
+  }
+  /* 小屏幕（大于等于576px） */
+  @media screen and (min-width: 576px) {
+    .inner {
+      width: 540px;
+    }
+    .item li {
+      width:50%;
+    }
+    .inner_hd h2 {
+      font-size: 30px;
+    }
+  }
+  /* 中等屏幕（大于等于768px） */
+  @media screen and (min-width: 768px) {
+    .inner {
+      width: 720px;
+    }
+    .item li {
+      width:33.3%;
+    }
+  }
+  /* 大屏幕（大于等于992px） */
+  @media screen and (min-width: 992px) {
+    .inner {
+      width: 960px;
+    }
+    .item li {
+      width:25%;
+    }
+  }
+  /* 超大屏幕（大于等于1200） */
+  @media screen and (min-width: 1200px) {
+    .inner {
+      width: 1200px;
+    }
+    .item li {
+      width:20%;
+    }
+  }

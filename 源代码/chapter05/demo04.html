@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="cavsElem" width="400" height="600">您的浏览器不支持Canvas</canvas>
+  <script>
+    var canvas = document.getElementById('cavsElem'); // 获取画布
+    var context = canvas.getContext('2d'); // 准备画笔
+    context.lineWidth = '10';     // 设置线条的宽度
+    context.strokeStyle = '#f00'; // 设置线条的颜色
+    context.lineCap = 'round';    // 设置线条的端点形状
+    context.moveTo(10, 120);      // 定义线条的起点坐标
+    context.lineTo(50, 120);      // 定义连接端点
+    context.lineTo(10, 150);      // 定义连接端点
+    context.lineTo(50, 150);      // 定义连接端点
+    context.stroke(); // 为线条描边
+
+
+    // 绘制蓝色的字母‘Z’
+    context.beginPath();           // 重置路径
+    context.strokeStyle = 'blue';  // 设置线条的颜色为蓝色
+    context.lineCap = 'butt';      // 定义端点平直
+    context.moveTo(10, 180);       // 定义初始位置
+    context.lineTo(50, 180);       // 定义连线端点
+    context.lineTo(10, 210);       // 定义连线端点
+    context.lineTo(50, 210);       // 定义连线端点
+    // 闭合路径
+    context.closePath();
+    context.stroke();              // 描边路径
+
+    // 绘制粉色的字母‘Z’
+    context.beginPath();            // 重置路径
+    context.strokeStyle = 'pink';   // 设置线条的颜色为粉色
+    context.lineCap = 'square';     // 定义端点方形
+    context.moveTo(10, 240);        // 定义初始位置
+    context.lineTo(50, 240);        // 定义连线端点
+    context.lineTo(10, 280);        // 定义连线端点
+    context.lineTo(50, 280);        // 定义连线端点
+    // 闭合路径
+    context.closePath();
+    context.stroke();               // 描边路径
+  </script>
+</body>
+
+</html>
